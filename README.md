@@ -3,14 +3,18 @@
 # Digital design 4-bit ALU. Submission for Tiny Tapeout 03.
 
 This is a digital design for a 4-bit ALU inspired by Z80 and 6502.
-I wanted this design to be visually easy to understand, check it out on Wokwi: https://wokwi.com/projects/360745091952588801
+
+I wanted design to be visually easy to understand and closer to perhaps how it would've been done back in the days, so I chose to design logic circuit in Wokwi instead of HDL. Check it out directly in your browser: https://wokwi.com/projects/360745091952588801
 
 ## How does it work?
 
 Each clock cycles ALU performs one of the 8 possible operations and stores result in the 4-bit accumulator register.
+  ```
   accumulator <4 bit> = accumulator <4 bit> (operation) operand <4 bit>
+  ```
 
-Supported operations:
+### Supported operations
+  ```
   lda imm   ::  imm -> accumulator
   neg imm   ::  0x0F - imm -> accumulator
   shr       ::  accumulator / 2 -> accumulator
@@ -19,8 +23,11 @@ Supported operations:
   xor imm   ::  accumulator ^ imm -> accumulator
   or  imm   ::  accumulator | imm -> accumulator
   add imm   ::  accumulator + imm -> accumulator
+  ```
+  
+### High-level cirtuit diagram
 
-## TODO
+## To Do
 * Share GDS on Twitter, tag it [#tinytapeout](https://twitter.com/hashtag/tinytapeout?src=hashtag_click) and [link Matt Venn](https://twitter.com/matthewvenn)!
 * Explain ALU design with a high-level diagram, include in this README
 * Add Negative, Overflow and Zero flag support
