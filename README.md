@@ -30,6 +30,7 @@ Each clock cycles ALU performs one of the 8 possible operations and stores resul
 ## To Do
 * Share GDS on Twitter, tag it [#tinytapeout](https://twitter.com/hashtag/tinytapeout?src=hashtag_click) and [link Matt Venn](https://twitter.com/matthewvenn)!
 * Explain ALU design with a high-level diagram, include in this README
+* 1-bit slice diagram
 * Add Negative, Overflow and Zero flag support
 * Figure out tidier implementation for hex-to-7segment decoder, probably using ESP32
 
